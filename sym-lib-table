@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name 96boards)(type Legacy)(uri ${KIPRJMOD}/96boards.lib)(options "")(descr ""))
+  (lib (name Ultra96-IO-Mezzanine-rescue)(type Legacy)(uri ${KIPRJMOD}/Ultra96-IO-Mezzanine-rescue.lib)(options "")(descr ""))
 )

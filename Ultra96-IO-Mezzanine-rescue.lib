@@ -1,109 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# 96boards_CONN_02X20
+# +1V8-power
 #
-DEF 96boards_CONN_02X20 P 0 1 Y N 1 F N
-F0 "P" 0 1050 50 H V C CNN
-F1 "96boards_CONN_02X20" 0 0 50 V V C CNN
-F2 "" 0 -950 60 H V C CNN
-F3 "" 0 -950 60 H V C CNN
-$FPLIST
- Pin_Header_Straight_2X20
- Pin_Header_Angled_2X20
- Socket_Strip_Straight_2X20
- Socket_Strip_Angled_2X20
-$ENDFPLIST
-DRAW
-S -100 -945 -50 -955 0 1 0 N
-S -100 -845 -50 -855 0 1 0 N
-S -100 -745 -50 -755 0 1 0 N
-S -100 -645 -50 -655 0 1 0 N
-S -100 -545 -50 -555 0 1 0 N
-S -100 -445 -50 -455 0 1 0 N
-S -100 -345 -50 -355 0 1 0 N
-S -100 -245 -50 -255 0 1 0 N
-S -100 -145 -50 -155 0 1 0 N
-S -100 -45 -50 -55 0 1 0 N
-S -100 55 -50 45 0 1 0 N
-S -100 155 -50 145 0 1 0 N
-S -100 255 -50 245 0 1 0 N
-S -100 355 -50 345 0 1 0 N
-S -100 455 -50 445 0 1 0 N
-S -100 555 -50 545 0 1 0 N
-S -100 655 -50 645 0 1 0 N
-S -100 755 -50 745 0 1 0 N
-S -100 855 -50 845 0 1 0 N
-S -100 955 -50 945 0 1 0 N
-S -100 1000 100 -1000 0 1 0 N
-S 50 -945 100 -955 0 1 0 N
-S 50 -845 100 -855 0 1 0 N
-S 50 -745 100 -755 0 1 0 N
-S 50 -645 100 -655 0 1 0 N
-S 50 -545 100 -555 0 1 0 N
-S 50 -445 100 -455 0 1 0 N
-S 50 -345 100 -355 0 1 0 N
-S 50 -245 100 -255 0 1 0 N
-S 50 -145 100 -155 0 1 0 N
-S 50 -45 100 -55 0 1 0 N
-S 50 55 100 45 0 1 0 N
-S 50 155 100 145 0 1 0 N
-S 50 255 100 245 0 1 0 N
-S 50 355 100 345 0 1 0 N
-S 50 455 100 445 0 1 0 N
-S 50 555 100 545 0 1 0 N
-S 50 655 100 645 0 1 0 N
-S 50 755 100 745 0 1 0 N
-S 50 855 100 845 0 1 0 N
-S 50 955 100 945 0 1 0 N
-X P1 1 -250 950 150 R 50 50 1 1 P
-X P10 10 250 550 150 L 50 50 1 1 P
-X P11 11 -250 450 150 R 50 50 1 1 P
-X P12 12 250 450 150 L 50 50 1 1 P
-X P13 13 -250 350 150 R 50 50 1 1 P
-X P14 14 250 350 150 L 50 50 1 1 P
-X P15 15 -250 250 150 R 50 50 1 1 P
-X P16 16 250 250 150 L 50 50 1 1 P
-X P17 17 -250 150 150 R 50 50 1 1 P
-X P18 18 250 150 150 L 50 50 1 1 P
-X P19 19 -250 50 150 R 50 50 1 1 P
-X P2 2 250 950 150 L 50 50 1 1 P
-X P20 20 250 50 150 L 50 50 1 1 P
-X P21 21 -250 -50 150 R 50 50 1 1 P
-X P22 22 250 -50 150 L 50 50 1 1 P
-X P23 23 -250 -150 150 R 50 50 1 1 P
-X P24 24 250 -150 150 L 50 50 1 1 P
-X P25 25 -250 -250 150 R 50 50 1 1 P
-X P26 26 250 -250 150 L 50 50 1 1 P
-X P27 27 -250 -350 150 R 50 50 1 1 P
-X P28 28 250 -350 150 L 50 50 1 1 P
-X P29 29 -250 -450 150 R 50 50 1 1 P
-X P3 3 -250 850 150 R 50 50 1 1 P
-X P30 30 250 -450 150 L 50 50 1 1 P
-X P31 31 -250 -550 150 R 50 50 1 1 P
-X P32 32 250 -550 150 L 50 50 1 1 P
-X P33 33 -250 -650 150 R 50 50 1 1 P
-X P34 34 250 -650 150 L 50 50 1 1 P
-X P35 35 -250 -750 150 R 50 50 1 1 P
-X P36 36 250 -750 150 L 50 50 1 1 P
-X P37 37 -250 -850 150 R 50 50 1 1 P
-X P38 38 250 -850 150 L 50 50 1 1 P
-X P39 39 -250 -950 150 R 50 50 1 1 P
-X P4 4 250 850 150 L 50 50 1 1 P
-X P40 40 250 -950 150 L 50 50 1 1 P
-X P5 5 -250 750 150 R 50 50 1 1 P
-X P6 6 250 750 150 L 50 50 1 1 P
-X P7 7 -250 650 150 R 50 50 1 1 P
-X P8 8 250 650 150 L 50 50 1 1 P
-X P9 9 -250 550 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Ultra96-IO-Mezzanine-rescue_+1V8-power
-#
-DEF Ultra96-IO-Mezzanine-rescue_+1V8-power #PWR 0 0 Y Y 1 F P
+DEF +1V8-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_+1V8-power" 0 140 50 H V C CNN
+F1 "+1V8-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -114,11 +16,11 @@ X +1V8 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_+2V8-power
+# +2V8-power
 #
-DEF Ultra96-IO-Mezzanine-rescue_+2V8-power #PWR 0 0 Y Y 1 F P
+DEF +2V8-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_+2V8-power" 0 140 50 H V C CNN
+F1 "+2V8-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -129,11 +31,11 @@ X +2V8 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_+3V3-power
+# +3V3-power
 #
-DEF Ultra96-IO-Mezzanine-rescue_+3V3-power #PWR 0 0 Y Y 1 F P
+DEF +3V3-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_+3V3-power" 0 140 50 H V C CNN
+F1 "+3V3-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -144,11 +46,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_+5V-power
+# +5V-power
 #
-DEF Ultra96-IO-Mezzanine-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+DEF +5V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_+5V-power" 0 140 50 H V C CNN
+F1 "+5V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -159,11 +61,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_AMS1117-3.3-Regulator_Linear
+# AMS1117-3.3-Regulator_Linear
 #
-DEF Ultra96-IO-Mezzanine-rescue_AMS1117-3.3-Regulator_Linear U 0 10 Y Y 1 F N
+DEF AMS1117-3.3-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_AMS1117-3.3-Regulator_Linear" 0 125 50 H V L CNN
+F1 "AMS1117-3.3-Regulator_Linear" 0 125 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" 0 200 50 H I C CNN
 F3 "" 100 -250 50 H I C CNN
 $FPLIST
@@ -177,11 +79,11 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_C-Device
+# C-Device
 #
-DEF Ultra96-IO-Mezzanine-rescue_C-Device C 0 10 N Y 1 F N
+DEF C-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Ultra96-IO-Mezzanine-rescue_C-Device" 25 -100 50 H V L CNN
+F1 "C-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -195,11 +97,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_Conn_02x20_Odd_Even-Connector_Generic
+# Conn_02x20_Odd_Even-Connector_Generic
 #
-DEF Ultra96-IO-Mezzanine-rescue_Conn_02x20_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_02x20_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 50 1000 50 H V C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_Conn_02x20_Odd_Even-Connector_Generic" 50 -1100 50 H V C CNN
+F1 "Conn_02x20_Odd_Even-Connector_Generic" 50 -1100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -290,11 +192,11 @@ X Pin_9 9 -200 500 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_D_Schottky-Device
+# D_Schottky-Device
 #
-DEF Ultra96-IO-Mezzanine-rescue_D_Schottky-Device D 0 40 N N 1 F N
+DEF D_Schottky-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_D_Schottky-Device" 0 -100 50 H V C CNN
+F1 "D_Schottky-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -312,11 +214,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_GND-power
+# GND-power
 #
-DEF Ultra96-IO-Mezzanine-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -325,11 +227,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_R-Device
+# R-Device
 #
-DEF Ultra96-IO-Mezzanine-rescue_R-Device R 0 0 N Y 1 F N
+DEF R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_R-Device" 0 0 50 V V C CNN
+F1 "R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -342,11 +244,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_STL6P3LLH6-STL6P3LLH6
+# STL6P3LLH6-STL6P3LLH6
 #
-DEF Ultra96-IO-Mezzanine-rescue_STL6P3LLH6-STL6P3LLH6 Q 0 40 N N 1 L N
+DEF STL6P3LLH6-STL6P3LLH6 Q 0 40 N N 1 L N
 F0 "Q" -350 150 50 H V L BNN
-F1 "Ultra96-IO-Mezzanine-rescue_STL6P3LLH6-STL6P3LLH6" -350 -250 50 H V L BNN
+F1 "STL6P3LLH6-STL6P3LLH6" -350 -250 50 H V L BNN
 F2 "TRANS_STL6P3LLH6" 0 0 50 H I L BNN
 F3 "ST Microelectronics" 0 0 50 H I L BNN
 F4 "1.0mm" 0 0 50 H I L BNN
@@ -381,11 +283,11 @@ X ~ 5_6_7_8 100 -200 100 U 40 40 0 0 P
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_STUSB4500QTR-Interface_USB
+# STUSB4500QTR-Interface_USB
 #
-DEF Ultra96-IO-Mezzanine-rescue_STUSB4500QTR-Interface_USB U 0 20 Y Y 1 F N
+DEF STUSB4500QTR-Interface_USB U 0 20 Y Y 1 F N
 F0 "U" -500 850 50 H V C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_STUSB4500QTR-Interface_USB" 350 -850 50 H V C CNN
+F1 "STUSB4500QTR-Interface_USB" 350 -850 50 H V C CNN
 F2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -421,11 +323,11 @@ X DISCH 9 600 -100 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_SW_Push-Switch
+# SW_Push-Switch
 #
-DEF Ultra96-IO-Mezzanine-rescue_SW_Push-Switch SW 0 40 N N 1 F N
+DEF SW_Push-Switch SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "Ultra96-IO-Mezzanine-rescue_SW_Push-Switch" 0 -60 50 H V C CNN
+F1 "SW_Push-Switch" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -438,11 +340,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_SW_SP3T-Switch
+# SW_SP3T-Switch
 #
-DEF Ultra96-IO-Mezzanine-rescue_SW_SP3T-Switch SW 0 0 Y N 1 F N
+DEF SW_SP3T-Switch SW 0 0 Y N 1 F N
 F0 "SW" 0 200 50 H V C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_SW_SP3T-Switch" 0 -200 50 H V C CNN
+F1 "SW_SP3T-Switch" 0 -200 50 H V C CNN
 F2 "" -625 175 50 H I C CNN
 F3 "" -625 175 50 H I C CNN
 $FPLIST
@@ -462,11 +364,11 @@ X 4 4 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_TXS0108EPW-Logic_LevelTranslator
+# TXS0108EPW-Logic_LevelTranslator
 #
-DEF Ultra96-IO-Mezzanine-rescue_TXS0108EPW-Logic_LevelTranslator U 0 20 Y Y 1 F N
+DEF TXS0108EPW-Logic_LevelTranslator U 0 20 Y Y 1 F N
 F0 "U" -250 650 50 H V C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_TXS0108EPW-Logic_LevelTranslator" 150 650 50 H V L CNN
+F1 "TXS0108EPW-Logic_LevelTranslator" 150 650 50 H V L CNN
 F2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" 0 -750 50 H I C CNN
 F3 "" 0 -100 50 H I C CNN
 $FPLIST
@@ -497,11 +399,11 @@ X A8 9 -400 -400 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_USB_C_Receptacle_USB2.0-Connector
+# USB_C_Receptacle_USB2.0-Connector
 #
-DEF Ultra96-IO-Mezzanine-rescue_USB_C_Receptacle_USB2.0-Connector J 0 40 Y Y 1 F N
+DEF USB_C_Receptacle_USB2.0-Connector J 0 40 Y Y 1 F N
 F0 "J" -400 750 50 H V L CNN
-F1 "Ultra96-IO-Mezzanine-rescue_USB_C_Receptacle_USB2.0-Connector" 750 750 50 H V R CNN
+F1 "USB_C_Receptacle_USB2.0-Connector" 750 750 50 H V R CNN
 F2 "" 150 0 50 H I C CNN
 F3 "" 150 0 50 H I C CNN
 $FPLIST
@@ -555,11 +457,11 @@ X SHIELD S1 -300 -900 200 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Ultra96-IO-Mezzanine-rescue_VBUS-power
+# VBUS-power
 #
-DEF Ultra96-IO-Mezzanine-rescue_VBUS-power #PWR 0 0 Y Y 1 F P
+DEF VBUS-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "Ultra96-IO-Mezzanine-rescue_VBUS-power" 0 150 50 H V C CNN
+F1 "VBUS-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
