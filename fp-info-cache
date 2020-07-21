@@ -1,4 +1,60 @@
-18377948397804725
+18390705742653620
+96board-hs
+96Boards_CE_outline_extd
+module 1 pin (ou trou mecanique de percage)
+96Boards, formfactor, mezzanine
+0
+6
+1
+96board-hs
+96Boards_CE_outline_std
+module 1 pin (ou trou mecanique de percage)
+96Boards, formfactor, mezzanine
+0
+4
+1
+96board-hs
+61083-063400LF
+
+
+0
+60
+60
+96board-hs
+Hole_2.5MM
+
+
+0
+1
+1
+96board-hs
+Pin_Header_SMD_2x20_Pitch2mm
+Double row SMD 2mm pin header, 2x20 contacts
+
+0
+40
+40
+96board-hs
+Pin_Header_Straight_2x20_Pitch2mm
+Double row through-hole 2mm pin header, 2x20 contacts
+CONN
+0
+40
+40
+96board-hs
+Socket_Strip_SMD_2x20_Pitch2mm
+Double row SMD 2mm socket strip, 2x20 contacts
+
+0
+40
+40
+96board-hs
+Socket_Strip_Straight_2x20_Pitch2mm
+Double row through-hole 2mm socket strip, 2x20 contacts
+CONN
+0
+40
+40
 96boards
 Hole_2.5MM
 

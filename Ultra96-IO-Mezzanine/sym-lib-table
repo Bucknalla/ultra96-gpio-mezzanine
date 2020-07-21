@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Ultra96-IO-Mezzanine-rescue)(type Legacy)(uri ${KIPRJMOD}/Ultra96-IO-Mezzanine-rescue.lib)(options "")(descr ""))
+  (lib (name 96boards)(type Legacy)(uri /home/alex/GitHub/mezzanine-community/template/kicad/96boards.lib)(options "")(descr ""))
+  (lib (name LevelShifer)(type Legacy)(uri /home/alex/GitHub/Ultra96-IO-Mezzanine/Libraries/TXS0104ERGYR.lib)(options "")(descr ""))
+)
