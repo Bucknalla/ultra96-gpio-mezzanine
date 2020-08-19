@@ -560,121 +560,30 @@ Wire Notes Line
 	15950 600  15950 4250
 Wire Notes Line
 	13150 600  13150 4250
-$Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power #PWR07
-U 1 1 5F13E6D4
-P 2800 2400
-F 0 "#PWR07" H 2800 2150 50  0001 C CNN
-F 1 "GND" H 2800 2250 50  0000 C CNN
-F 2 "" H 2800 2400 60  0000 C CNN
-F 3 "" H 2800 2400 60  0000 C CNN
-	1    2800 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 2300 2800 2400
-Text GLabel 1400 1700 0    60   Output ~ 0
+Text GLabel 8250 3750 0    60   Output ~ 0
 UART0_TX
 Wire Wire Line
-	1400 1700 1500 1700
-Text GLabel 1400 1800 0    60   Input ~ 0
+	8250 3750 8350 3750
+Text GLabel 8250 3850 0    60   Input ~ 0
 UART0_RX
 Wire Wire Line
-	1400 1800 1500 1800
-Text GLabel 1400 1900 0    60   Input ~ 0
+	8250 3850 8350 3850
+Text GLabel 8250 3950 0    60   Input ~ 0
 UART0_CTS
 Wire Wire Line
-	1400 1900 1500 1900
-Text GLabel 1400 2000 0    60   Output ~ 0
+	8250 3950 8350 3950
+Text GLabel 8250 4050 0    60   Output ~ 0
 UART0_RTS
 Wire Wire Line
-	1400 2000 1500 2000
-$Comp
-L Ultra96-IO-Mezzanine-rescue:+5V-power #PWR010
-U 1 1 5F1655F2
-P 3000 1100
-F 0 "#PWR010" H 3000 950 50  0001 C CNN
-F 1 "+5V" H 3100 1150 50  0000 C CNN
-F 2 "" H 3000 1100 50  0001 C CNN
-F 3 "" H 3000 1100 50  0001 C CNN
-	1    3000 1100
-	1    0    0    -1  
-$EndComp
-Text GLabel 2800 1700 2    60   Output ~ 0
+	8250 4050 8350 4050
+Text GLabel 9350 3750 2    60   Output ~ 0
 UART0_TX_O
-Wire Wire Line
-	2800 1700 2700 1700
-Text GLabel 2800 1800 2    60   Input ~ 0
+Text GLabel 9350 3850 2    60   Input ~ 0
 UART0_RX_O
-Wire Wire Line
-	2800 1800 2700 1800
-Text GLabel 2800 1900 2    60   Input ~ 0
+Text GLabel 9350 3950 2    60   Input ~ 0
 UART0_CTS_O
-Wire Wire Line
-	2800 1900 2700 1900
-Text GLabel 2800 2000 2    60   Output ~ 0
+Text GLabel 9350 4050 2    60   Output ~ 0
 UART0_RTS_O
-Wire Wire Line
-	2800 2000 2700 2000
-$Comp
-L Ultra96-IO-Mezzanine-rescue:TXS0104ERGYR-LevelShifer U1
-U 1 1 5F19EA6D
-P 2100 1800
-F 0 "U1" H 2100 2667 50  0000 C CNN
-F 1 "TXS0104ERGYR" H 2100 2576 50  0000 C CNN
-F 2 "Package_DFN_QFN:Texas_S-PVQFN-N14_ThermalVias" H 2100 1800 50  0001 L BNN
-F 3 "TEXAS INSTRUMENTS" H 2100 1800 50  0001 L BNN
-F 4 "IPC 7351B" H 2100 1800 50  0001 L BNN "Field4"
-F 5 "H" H 2100 1800 50  0001 L BNN "Field5"
-	1    2100 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 1100 2850 1200
-$Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power #PWR09
-U 1 1 5F143AFB
-P 2850 1100
-F 0 "#PWR09" H 2850 950 50  0001 C CNN
-F 1 "+1V8" H 2700 1150 50  0000 C CNN
-F 2 "" H 2850 1100 60  0000 C CNN
-F 3 "" H 2850 1100 60  0000 C CNN
-	1    2850 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 1200 2850 1200
-Wire Wire Line
-	2700 1300 3000 1300
-Wire Wire Line
-	3000 1100 3000 1300
-Wire Wire Line
-	2800 2300 2700 2300
-$Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power #PWR03
-U 1 1 5F1F21A8
-P 1400 1100
-F 0 "#PWR03" H 1400 950 50  0001 C CNN
-F 1 "+1V8" H 1400 1240 50  0000 C CNN
-F 2 "" H 1400 1100 60  0000 C CNN
-F 3 "" H 1400 1100 60  0000 C CNN
-	1    1400 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 1100 1400 1500
-Wire Wire Line
-	1400 1500 1500 1500
-Wire Notes Line
-	800  650  3550 650 
-Wire Notes Line
-	3550 650  3550 2650
-Wire Notes Line
-	3550 2650 800  2650
-Wire Notes Line
-	800  2650 800  650 
-Text Notes 1650 800  0    60   ~ 0
-UART0 Level Shifter
 $Comp
 L 96boards:CONN_02X20 P1
 U 1 1 5F210EBD
@@ -1716,11 +1625,7 @@ Wire Wire Line
 Wire Notes Line
 	4800 600  10150 600 
 Wire Notes Line
-	10150 600  10150 3000
-Wire Notes Line
-	10150 3000 4800 3000
-Wire Notes Line
-	4800 3000 4800 600 
+	10150 4800 4800 4800
 Text Notes 7100 750  0    60   ~ 0
 Level Shifters
 NoConn ~ 4750 10150
@@ -2415,4 +2320,262 @@ NoConn ~ 8900 6850
 NoConn ~ 8900 6950
 NoConn ~ 8900 7450
 NoConn ~ 8900 7550
+Wire Notes Line
+	10150 600  10150 4800
+Wire Notes Line
+	4800 600  4800 4800
+$Comp
+L Ultra96-IO-Mezzanine-rescue:TXS0108EPW-Logic_LevelTranslator U6
+U 1 1 6087561F
+P 6050 3800
+F 0 "U6" H 6450 3050 50  0000 C CNN
+F 1 "TXS0108EPW" H 6450 2950 50  0000 C CNN
+F 2 "LevelShifter:QFN50P450X350X100-21N" H 6050 3050 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 6050 3700 50  0001 C CNN
+	1    6050 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 2950 2    60   BiDi ~ 0
+VCCB
+Wire Wire Line
+	6300 2950 6150 2950
+Wire Wire Line
+	6150 2950 6150 3100
+$Comp
+L Ultra96-IO-Mezzanine-rescue:+1V8-power #PWR0121
+U 1 1 60968362
+P 5950 2950
+F 0 "#PWR0121" H 5950 2800 50  0001 C CNN
+F 1 "+1V8" H 5950 3090 50  0000 C CNN
+F 2 "" H 5950 2950 60  0000 C CNN
+F 3 "" H 5950 2950 60  0000 C CNN
+	1    5950 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2950 5950 3050
+Wire Wire Line
+	5950 3050 5650 3050
+Wire Wire Line
+	5650 3050 5650 3400
+Connection ~ 5950 3050
+Wire Wire Line
+	5950 3050 5950 3100
+$Comp
+L Ultra96-IO-Mezzanine-rescue:GND-power #PWR0122
+U 1 1 609E325F
+P 6050 4650
+F 0 "#PWR0122" H 6050 4400 50  0001 C CNN
+F 1 "GND" H 6050 4500 50  0000 C CNN
+F 2 "" H 6050 4650 60  0000 C CNN
+F 3 "" H 6050 4650 60  0000 C CNN
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4500 6050 4650
+Text GLabel 5450 3500 0    60   Input ~ 0
+GPIO_E
+Text GLabel 5450 3600 0    60   Input ~ 0
+GPIO_G
+Text GLabel 5450 3700 0    60   Input ~ 0
+GPIO_I
+Text GLabel 5450 3800 0    60   Input ~ 0
+GPIO_K
+Text GLabel 5450 3900 0    60   Input ~ 0
+GPIO_H
+Text GLabel 5450 4000 0    60   Input ~ 0
+GPIO_F
+$Comp
+L Switch:SW_Push_Open SW2
+U 1 1 60B20626
+P 11350 4250
+F 0 "SW2" H 11350 4465 50  0000 C CNN
+F 1 "SW_Push_Open" H 11350 4374 50  0000 C CNN
+F 2 "Ultra96:MCPL3-AC-V" H 11350 4450 50  0001 C CNN
+F 3 "~" H 11350 4450 50  0001 C CNN
+	1    11350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Open SW3
+U 1 1 60B20916
+P 11350 4700
+F 0 "SW3" H 11350 4915 50  0000 C CNN
+F 1 "SW_Push_Open" H 11350 4824 50  0000 C CNN
+F 2 "Ultra96:MCPL3-AC-V" H 11350 4900 50  0001 C CNN
+F 3 "~" H 11350 4900 50  0001 C CNN
+	1    11350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ultra96-IO-Mezzanine-rescue:TXS0108EPW-Logic_LevelTranslator U7
+U 1 1 60B5F573
+P 8750 3850
+F 0 "U7" H 9150 3100 50  0000 C CNN
+F 1 "TXS0108EPW" H 9150 3000 50  0000 C CNN
+F 2 "LevelShifter:QFN50P450X350X100-21N" H 8750 3100 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 8750 3750 50  0001 C CNN
+	1    8750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ultra96-IO-Mezzanine-rescue:GND-power #PWR0123
+U 1 1 60B604BC
+P 8750 4650
+F 0 "#PWR0123" H 8750 4400 50  0001 C CNN
+F 1 "GND" H 8750 4500 50  0000 C CNN
+F 2 "" H 8750 4650 60  0000 C CNN
+F 3 "" H 8750 4650 60  0000 C CNN
+	1    8750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4550 8750 4650
+Text GLabel 9050 2900 2    60   BiDi ~ 0
+VCCB
+Wire Wire Line
+	9050 2900 8850 2900
+Wire Wire Line
+	8850 2900 8850 3150
+$Comp
+L Ultra96-IO-Mezzanine-rescue:+1V8-power #PWR0124
+U 1 1 60BDA8DF
+P 8650 2900
+F 0 "#PWR0124" H 8650 2750 50  0001 C CNN
+F 1 "+1V8" H 8650 3040 50  0000 C CNN
+F 2 "" H 8650 2900 60  0000 C CNN
+F 3 "" H 8650 2900 60  0000 C CNN
+	1    8650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2900 8650 3050
+Wire Wire Line
+	8650 3050 8350 3050
+Wire Wire Line
+	8350 3050 8350 3450
+Connection ~ 8650 3050
+Wire Wire Line
+	8650 3050 8650 3150
+Wire Wire Line
+	5450 3500 5650 3500
+Wire Wire Line
+	5650 3600 5450 3600
+Wire Wire Line
+	5450 3700 5650 3700
+Wire Wire Line
+	5650 3800 5450 3800
+Wire Wire Line
+	5450 3900 5650 3900
+Wire Wire Line
+	5650 4000 5450 4000
+Text GLabel 6750 3500 2    60   Input ~ 0
+GPIO_E_RPI
+Text GLabel 6750 3600 2    60   Input ~ 0
+GPIO_G_RPI
+Text GLabel 6750 3700 2    60   Input ~ 0
+GPIO_I_RPI
+Text GLabel 6750 3800 2    60   Input ~ 0
+GPIO_K_RPI
+Text GLabel 6750 3900 2    60   Input ~ 0
+GPIO_H_RPI
+Text GLabel 6750 4000 2    60   Input ~ 0
+GPIO_F_RPI
+Wire Wire Line
+	6750 3500 6450 3500
+Wire Wire Line
+	6450 3600 6750 3600
+Wire Wire Line
+	6750 3700 6450 3700
+Wire Wire Line
+	6450 3800 6750 3800
+Wire Wire Line
+	6750 3900 6450 3900
+Wire Wire Line
+	6750 4000 6450 4000
+Text GLabel 6750 4100 2    60   Input ~ 0
+UART1_TX_RPI
+Text GLabel 6750 4200 2    60   Input ~ 0
+UART1_RX_RPI
+Wire Wire Line
+	6750 4100 6450 4100
+Wire Wire Line
+	6450 4200 6750 4200
+Text GLabel 5450 4100 0    60   Input ~ 0
+UART1_TX
+Text GLabel 5450 4200 0    60   Input ~ 0
+UART1_RX
+Wire Wire Line
+	5650 4100 5450 4100
+Wire Wire Line
+	5450 4200 5650 4200
+Text GLabel 9350 3550 2    60   Input ~ 0
+SPIO_CS_RPI
+Text GLabel 9350 3650 2    60   Input ~ 0
+GPIO_B_RPI
+Wire Wire Line
+	9150 3750 9350 3750
+Wire Wire Line
+	9150 3850 9350 3850
+Wire Wire Line
+	9150 3950 9350 3950
+Wire Wire Line
+	9150 4050 9350 4050
+Wire Wire Line
+	9350 3650 9150 3650
+Wire Wire Line
+	9350 3550 9150 3550
+Text GLabel 8250 3650 0    60   Input ~ 0
+GPIO_B
+Text GLabel 8250 3550 0    60   Input ~ 0
+SPIO_CS
+Wire Wire Line
+	8350 3550 8250 3550
+Wire Wire Line
+	8250 3650 8350 3650
+NoConn ~ 9150 4150
+NoConn ~ 9150 4250
+NoConn ~ 8350 4150
+NoConn ~ 8350 4250
+Text GLabel 11950 4250 2    60   Input ~ 0
+PWR_BTN_N
+Text GLabel 11950 4700 2    60   Input ~ 0
+RST_BTN_N
+Wire Wire Line
+	11950 4250 11550 4250
+Wire Wire Line
+	11950 4700 11550 4700
+$Comp
+L Ultra96-IO-Mezzanine-rescue:GND-power #PWR0125
+U 1 1 61598EB7
+P 10850 4350
+F 0 "#PWR0125" H 10850 4100 50  0001 C CNN
+F 1 "GND" H 10850 4200 50  0000 C CNN
+F 2 "" H 10850 4350 60  0000 C CNN
+F 3 "" H 10850 4350 60  0000 C CNN
+	1    10850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 4250 10850 4250
+Wire Wire Line
+	10850 4250 10850 4350
+$Comp
+L Ultra96-IO-Mezzanine-rescue:GND-power #PWR0126
+U 1 1 615DE338
+P 10850 4800
+F 0 "#PWR0126" H 10850 4550 50  0001 C CNN
+F 1 "GND" H 10850 4650 50  0000 C CNN
+F 2 "" H 10850 4800 60  0000 C CNN
+F 3 "" H 10850 4800 60  0000 C CNN
+	1    10850 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 4700 10850 4700
+Wire Wire Line
+	10850 4700 10850 4800
+NoConn ~ 7700 6250
+NoConn ~ 7700 7450
 $EndSCHEMATC
