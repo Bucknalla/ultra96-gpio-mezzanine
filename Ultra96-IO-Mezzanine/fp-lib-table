@@ -1,4 +1,4 @@
 (fp_lib_table
   (lib (name 96boards)(type KiCad)(uri "$(KIPRJMOD)/96boards.pretty")(options "")(descr ""))
-  (lib (name Ultra96)(type KiCad)(uri /home/alex/GitHub/Ultra96-IO-Mezzanine/Libraries)(options "")(descr ""))
+  (lib (name Ultra96)(type KiCad)(uri /home/alex/GitHub/ultra96-gpio-mezzanine/Libraries)(options "")(descr ""))
 )
