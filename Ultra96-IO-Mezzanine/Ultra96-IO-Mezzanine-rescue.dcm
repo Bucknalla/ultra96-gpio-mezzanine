@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STL6P3LLH6-STL6P3LLH6
+F ST Microelectronics
+$ENDCMP
+#
+$CMP TXS0104ERGYR-LevelShifer
+F TEXAS INSTRUMENTS
+$ENDCMP
+#
+#End Doc Library
