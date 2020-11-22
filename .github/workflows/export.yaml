@@ -1,0 +1,89 @@
+name: kicad
+
+on:
+  push:
+    paths:
+      - "**.sch"
+      - "**.kicad_pcb"
+  pull_request:
+    paths:
+      - "**.sch"
+      - "**.kicad_pcb"
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nerdyscout/kicad-exports@v2.2
+        with:
+          # Required - kibot config file
+          config: docs.kibot.yaml
+          # optional - prefix to output defined in config
+          dir: docs
+          # optional - schematic file
+          schema: "source/*.sch"
+          # optional - PCB design file
+          board: "source/*.kicad_pcb"
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: docs
+          path: docs
+  bom:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nerdyscout/kicad-exports@v2.2
+        with:
+          # Required - kibot config file
+          config: bom.kibot.yaml
+          # optional - prefix to output defined in config
+          dir: bom
+          # optional - schematic file
+          schema: "source/*.sch"
+          # optional - PCB design file
+          board: "source/*.kicad_pcb"
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: bom
+          path: bom
+  fabricate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nerdyscout/kicad-exports@v2.2
+        with:
+          # Required - kibot config file
+          config: fabrications.kibot.yaml
+          # optional - prefix to output defined in config
+          dir: fabricate
+          # optional - schematic file
+          schema: "source/*.sch"
+          # optional - PCB design file
+          board: "source/*.kicad_pcb"
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: fabricate
+          path: fabricate
+  cad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nerdyscout/kicad-exports@v2.2
+        with:
+          # Required - kibot config file
+          config: model.kibot.yaml
+          # optional - prefix to output defined in config
+          dir: step
+          # optional - schematic file
+          schema: "source/*.sch"
+          # optional - PCB design file
+          board: "source/*.kicad_pcb"
+      - name: upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: step
+          path: step
