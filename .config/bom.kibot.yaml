@@ -10,6 +10,7 @@ outputs:
     type: "ibom"
     dir: "docs/bom"
     options:
+      html: { logo: ".config/bom/balena.png" }
       # [string=''] List of comma separated blacklisted components or prefixes with *. E.g. 'X1,MH*'.
       # IBoM option, avoid using in conjunction with KiBot variants/filters
       blacklist: ""
