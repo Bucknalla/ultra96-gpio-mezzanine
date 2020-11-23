@@ -37,7 +37,7 @@ jobs:
       - uses: nerdyscout/kicad-exports@v2.2
         with:
           # Required - kibot config file
-          config: bom.kibot.yaml
+          config: .config/bom.kibot.yaml
           # optional - prefix to output defined in config
           dir: bom
           # optional - schematic file
