@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name 96board)(type KiCad)(uri "$(KIPRJMOD)/libraries/96boards/96boards.pretty")(options "")(descr ""))
+  (lib (name artwork)(type KiCad)(uri "$(KIPRJMOD)/libraries/artwork")(options "")(descr ""))
+  (lib (name levelshifter)(type KiCad)(uri "$(KIPRJMOD)/libraries/LevelShifter")(options "")(descr ""))
+  (lib (name STL6P3LLH6)(type KiCad)(uri "$(KIPRJMOD)/libraries/STL6P3LLH6")(options "")(descr ""))
+)

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Ultra96-IO-Mezzanine-rescue)(type Legacy)(uri ${KIPRJMOD}/Ultra96-IO-Mezzanine-rescue.lib)(options "")(descr ""))
+  (lib (name 96boards)(type Legacy)(uri ${KIPRJMOD}/libraries/96boards/96boards.lib)(options "")(descr ""))
+  (lib (name snapeda)(type Legacy)(uri ${KIPRJMOD}/libraries/STL6P3LLH6/STL6P3LLH6.lib)(options "")(descr ""))
+)

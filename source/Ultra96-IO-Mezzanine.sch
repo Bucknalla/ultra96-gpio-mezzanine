@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "96Boards Mezzanine Project Template"
-Date "14 Aug 2015"
-Rev "A"
-Comp ""
+Title "Ultra96 Board GPIO Mezzanine"
+Date "2020-11-22"
+Rev "1.0.0"
+Comp "Alex Bucknall"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -16,7 +16,7 @@ $EndDescr
 Text GLabel 14350 5100 0    60   Output ~ 0
 UART0_RTS
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR029
+L power:GND #PWR029
 U 1 1 55D481C7
 P 14350 4550
 F 0 "#PWR029" H 14350 4300 50  0001 C CNN
@@ -29,7 +29,7 @@ $EndComp
 Text GLabel 14350 4900 0    60   Output ~ 0
 UART0_TX
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR030
+L power:GND #PWR030
 U 1 1 55D481CF
 P 14400 6600
 F 0 "#PWR030" H 14400 6350 50  0001 C CNN
@@ -40,7 +40,7 @@ F 3 "" H 14400 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR032
+L power:GND #PWR032
 U 1 1 55D481D5
 P 15100 6600
 F 0 "#PWR032" H 15100 6350 50  0001 C CNN
@@ -55,7 +55,7 @@ UART0_CTS
 Text GLabel 15100 6500 2    60   Input ~ 0
 SYS_DCIN
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR033
+L power:GND #PWR033
 U 1 1 55D48218
 P 15150 4550
 F 0 "#PWR033" H 15150 4300 50  0001 C CNN
@@ -66,7 +66,7 @@ F 3 "" H 15150 4550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:CONN_02X20-96boards-Ultra96-IO-Mezzanine-rescue P3
+L 96boards:CONN_02X20 P3
 U 1 1 55D48226
 P 14750 5650
 F 0 "P3" H 14750 6700 50  0000 C CNN
@@ -79,7 +79,7 @@ F 5 "F240-1220A0xMUx1" H 14750 5650 60  0001 C CNN "Mfr Part #"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power-Ultra96-IO-Mezzanine-rescue #PWR027
+L power:+1V8 #PWR027
 U 1 1 55D4822C
 P 13850 6350
 F 0 "#PWR027" H 13850 6200 50  0001 C CNN
@@ -90,7 +90,7 @@ F 3 "" H 13850 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+5V-power-Ultra96-IO-Mezzanine-rescue #PWR026
+L power:+5V #PWR026
 U 1 1 55D48233
 P 13650 6350
 F 0 "#PWR026" H 13650 6200 50  0001 C CNN
@@ -256,18 +256,18 @@ Wire Wire Line
 Text Notes 14325 4425 0    60   ~ 0
 Top Side Socket Strip
 $Comp
-L Ultra96-IO-Mezzanine-rescue:CONN_02X30-Ultra96-IO-Mezzanine-rescue P2
+L Connector_Generic:Conn_02x30_Odd_Even P2
 U 1 1 598D5B9D
-P 14800 2400
-F 0 "P2" H 14800 3950 50  0000 C CNN
-F 1 "CONN_02X30" V 14800 2350 50  0000 C CNN
-F 2 "96boards:61083-063400LF" H 14800 1900 50  0001 C CNN
-F 3 "http://portal.fciconnect.com/Comergent/fci/drawing/61083.pdf" H 14800 1900 50  0001 C CNN
-	1    14800 2400
+P 14750 2350
+F 0 "P2" H 14750 3900 50  0000 C CNN
+F 1 "CONN_02X30" V 14750 2300 50  0000 C CNN
+F 2 "96boards:61083-063400LF" H 14750 1850 50  0001 C CNN
+F 3 "http://portal.fciconnect.com/Comergent/fci/drawing/61083.pdf" H 14750 1850 50  0001 C CNN
+	1    14750 2350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR028
+L power:GND #PWR028
 U 1 1 598D640A
 P 14450 3950
 F 0 "#PWR028" H 14450 3700 50  0001 C CNN
@@ -278,7 +278,7 @@ F 3 "" H 14450 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR031
+L power:GND #PWR031
 U 1 1 598D6433
 P 15150 3950
 F 0 "#PWR031" H 15150 3700 50  0001 C CNN
@@ -567,7 +567,7 @@ UART0_CTS_O
 Text GLabel 12000 2200 2    60   Output ~ 0
 UART0_RTS_O
 $Comp
-L Ultra96-IO-Mezzanine-rescue:CONN_02X20-96boards-Ultra96-IO-Mezzanine-rescue P1
+L 96boards:CONN_02X20 P1
 U 1 1 5F210EBD
 P 14700 8500
 F 0 "P1" H 14700 9665 50  0000 C CNN
@@ -578,7 +578,7 @@ F 3 "" H 14700 7550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+3V3-power-Ultra96-IO-Mezzanine-rescue #PWR023
+L power:+3V3 #PWR023
 U 1 1 5F21833C
 P 14200 7350
 F 0 "#PWR023" H 14200 7200 50  0001 C CNN
@@ -591,7 +591,7 @@ $EndComp
 Wire Wire Line
 	14200 7350 14200 7550
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+5V-power-Ultra96-IO-Mezzanine-rescue #PWR024
+L power:+5V #PWR024
 U 1 1 5F21F805
 P 15200 7300
 F 0 "#PWR024" H 15200 7150 50  0001 C CNN
@@ -611,7 +611,7 @@ Connection ~ 15200 7550
 Wire Wire Line
 	15200 7550 15200 7650
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR022
+L power:GND #PWR022
 U 1 1 5F22E6CE
 P 13600 9600
 F 0 "#PWR022" H 13600 9350 50  0001 C CNN
@@ -622,7 +622,7 @@ F 3 "" H 13600 9600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR025
+L power:GND #PWR025
 U 1 1 5F2362C7
 P 15800 9600
 F 0 "#PWR025" H 15800 9350 50  0001 C CNN
@@ -713,7 +713,7 @@ SPIO_CS_RPI
 Wire Wire Line
 	15000 8650 14950 8650
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+3V3-power-Ultra96-IO-Mezzanine-rescue #PWR021
+L power:+3V3 #PWR021
 U 1 1 5F324F72
 P 13450 8250
 F 0 "#PWR021" H 13450 8100 50  0001 C CNN
@@ -798,7 +798,7 @@ NoConn ~ 14400 8050
 Text Notes 14450 7100 0    60   ~ 0
 RPi Header
 $Comp
-L Ultra96-IO-Mezzanine-rescue:CP2102N-A01-GQFN24-Interface_USB-Ultra96-IO-Mezzanine-rescue U2
+L Interface_USB:CP2102N-A01-GQFN24 U2
 U 1 1 5F45E042
 P 2700 5700
 F 0 "U2" H 3350 4850 50  0000 C CNN
@@ -809,7 +809,7 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:Conn_01x08_Female-Connector-Ultra96-IO-Mezzanine-rescue J2
+L Connector:Conn_01x08_Female J2
 U 1 1 5F45EE80
 P 12500 8750
 F 0 "J2" H 12528 8726 50  0000 L CNN
@@ -836,7 +836,7 @@ UART0_CTS_O
 Wire Wire Line
 	3350 5200 3300 5200
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR08
+L power:GND #PWR08
 U 1 1 5F49813C
 P 2750 6750
 F 0 "#PWR08" H 2750 6500 50  0001 C CNN
@@ -870,7 +870,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 10400 8200 10300
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR01
+L power:GND #PWR01
 U 1 1 5F524209
 P 8200 10450
 F 0 "#PWR01" H 8200 10200 50  0001 C CNN
@@ -888,7 +888,7 @@ NoConn ~ 3300 5700
 NoConn ~ 3300 5600
 NoConn ~ 3300 5100
 $Comp
-L Ultra96-IO-Mezzanine-rescue:SP0503BAHT-Power_Protection-Ultra96-IO-Mezzanine-rescue D3
+L Power_Protection:SP0503BAHT D3
 U 1 1 5F58641C
 P 6100 10250
 F 0 "D3" H 6305 10296 50  0000 L CNN
@@ -899,7 +899,7 @@ F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/do
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR020
+L power:GND #PWR020
 U 1 1 5F58760B
 P 6100 10500
 F 0 "#PWR020" H 6100 10250 50  0001 C CNN
@@ -932,7 +932,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 10000 6200 10050
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR04
+L power:GND #PWR04
 U 1 1 5F5DC857
 P 1600 6550
 F 0 "#PWR04" H 1600 6300 50  0001 C CNN
@@ -943,7 +943,7 @@ F 3 "" H 1600 6550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R-Device-Ultra96-IO-Mezzanine-rescue R2
+L Device:R R2
 U 1 1 5F5DD046
 P 1600 6300
 F 0 "R2" H 1530 6254 50  0000 R CNN
@@ -954,7 +954,7 @@ F 3 "~" H 1600 6300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R-Device-Ultra96-IO-Mezzanine-rescue R1
+L Device:R R1
 U 1 1 5F5DE101
 P 1400 6000
 F 0 "R1" V 1607 6000 50  0000 C CNN
@@ -969,7 +969,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 6450 1600 6550
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+5V-power-Ultra96-IO-Mezzanine-rescue #PWR05
+L power:+5V #PWR05
 U 1 1 5F6253A0
 P 1750 5550
 F 0 "#PWR05" H 1750 5400 50  0001 C CNN
@@ -984,7 +984,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 5700 2100 5700
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+3V3-power-Ultra96-IO-Mezzanine-rescue #PWR06
+L power:+3V3 #PWR06
 U 1 1 5F638BDD
 P 2600 4650
 F 0 "#PWR06" H 2600 4500 50  0001 C CNN
@@ -997,7 +997,7 @@ $EndComp
 Wire Wire Line
 	2600 4650 2600 4700
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R-Device-Ultra96-IO-Mezzanine-rescue R3
+L Device:R R3
 U 1 1 5F65DEB1
 P 2000 4900
 F 0 "R3" H 2070 4946 50  0000 L CNN
@@ -1025,7 +1025,7 @@ Wire Wire Line
 NoConn ~ 3300 6100
 NoConn ~ 3300 6000
 $Comp
-L Ultra96-IO-Mezzanine-rescue:LED-Device-Ultra96-IO-Mezzanine-rescue D1
+L Device:LED D1
 U 1 1 5F6BC46B
 P 3600 6300
 F 0 "D1" H 3593 6517 50  0000 C CNN
@@ -1036,7 +1036,7 @@ F 3 "~" H 3600 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:LED-Device-Ultra96-IO-Mezzanine-rescue D2
+L Device:LED D2
 U 1 1 5F6BD3CD
 P 3850 6200
 F 0 "D2" H 3843 6417 50  0000 C CNN
@@ -1051,7 +1051,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 6300 3450 6300
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R-Device-Ultra96-IO-Mezzanine-rescue R4
+L Device:R R4
 U 1 1 5F6E4B32
 P 4100 5850
 F 0 "R4" H 3850 5900 50  0000 L CNN
@@ -1062,7 +1062,7 @@ F 3 "~" H 4100 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R-Device-Ultra96-IO-Mezzanine-rescue R5
+L Device:R R5
 U 1 1 5F6E56D3
 P 4250 5850
 F 0 "R5" H 4320 5896 50  0000 L CNN
@@ -1093,7 +1093,7 @@ Wire Wire Line
 Connection ~ 4100 5500
 Connection ~ 2700 4700
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR011
+L power:GND #PWR011
 U 1 1 5F736180
 P 3550 5000
 F 0 "#PWR011" H 3550 4750 50  0001 C CNN
@@ -1104,7 +1104,7 @@ F 3 "" H 3550 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C3
+L Device:C_Small C3
 U 1 1 5F7375FA
 P 3450 4800
 F 0 "C3" H 3300 4700 50  0000 L CNN
@@ -1118,7 +1118,7 @@ Connection ~ 3450 4700
 Wire Wire Line
 	3450 4700 2700 4700
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C4
+L Device:C_Small C4
 U 1 1 5F737A5C
 P 3650 4800
 F 0 "C4" H 3700 4700 50  0000 L CNN
@@ -1139,7 +1139,7 @@ Connection ~ 3550 4900
 Wire Wire Line
 	3550 4900 3650 4900
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C1
+L Device:C_Small C1
 U 1 1 5F7EF19A
 P 6200 8850
 F 0 "C1" H 5950 8750 50  0000 L CNN
@@ -1152,7 +1152,7 @@ $EndComp
 Wire Wire Line
 	6200 8750 6400 8750
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C2
+L Device:C_Small C2
 U 1 1 5F7EF629
 P 6400 8850
 F 0 "C2" H 6500 8750 50  0000 L CNN
@@ -1168,7 +1168,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 8950 6300 8950
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR02
+L power:GND #PWR02
 U 1 1 5F805C49
 P 6300 8950
 F 0 "#PWR02" H 6300 8700 50  0001 C CNN
@@ -1186,12 +1186,12 @@ NoConn ~ 8800 10000
 NoConn ~ 2100 5400
 NoConn ~ 2100 5500
 $Comp
-L Ultra96-IO-Mezzanine-rescue:TXS0108EPW-Logic_LevelTranslator-Ultra96-IO-Mezzanine-rescue U3
+L Logic_LevelTranslator:TXS0108EPW U3
 U 1 1 5F89E918
 P 8350 1900
 F 0 "U3" H 8750 1150 50  0000 C CNN
 F 1 "TXS0108EPW" H 8750 1050 50  0000 C CNN
-F 2 "LevelShifter:QFN50P450X350X100-21N" H 8350 1150 50  0001 C CNN
+F 2 "levelshifter:QFN50P450X350X100-21N" H 8350 1150 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 8350 1800 50  0001 C CNN
 	1    8350 1900
 	1    0    0    -1  
@@ -1201,7 +1201,7 @@ VCCB
 Wire Wire Line
 	8450 1200 8450 1050
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power-Ultra96-IO-Mezzanine-rescue #PWR014
+L power:+1V8 #PWR014
 U 1 1 5F8B6397
 P 8250 1050
 F 0 "#PWR014" H 8250 900 50  0001 C CNN
@@ -1221,7 +1221,7 @@ Connection ~ 8250 1150
 Wire Wire Line
 	8250 1150 8250 1200
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR015
+L power:GND #PWR015
 U 1 1 5F8E34BC
 P 8350 2650
 F 0 "#PWR015" H 8350 2400 50  0001 C CNN
@@ -1234,7 +1234,7 @@ $EndComp
 Wire Wire Line
 	8350 2600 8350 2650
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power-Ultra96-IO-Mezzanine-rescue #PWR017
+L power:+1V8 #PWR017
 U 1 1 5F912A15
 P 11700 6350
 F 0 "#PWR017" H 11700 6200 50  0001 C CNN
@@ -1245,7 +1245,7 @@ F 3 "" H 11700 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+3V3-power-Ultra96-IO-Mezzanine-rescue #PWR018
+L power:+3V3 #PWR018
 U 1 1 5F913548
 P 11900 6350
 F 0 "#PWR018" H 11900 6200 50  0001 C CNN
@@ -1256,7 +1256,7 @@ F 3 "" H 11900 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+5V-power-Ultra96-IO-Mezzanine-rescue #PWR019
+L power:+5V #PWR019
 U 1 1 5F913C41
 P 12100 6350
 F 0 "#PWR019" H 12100 6200 50  0001 C CNN
@@ -1275,7 +1275,7 @@ Wire Wire Line
 Wire Wire Line
 	12100 6650 12100 6350
 $Comp
-L Ultra96-IO-Mezzanine-rescue:USB_C_Receptacle_USB2.0-Connector-Ultra96-IO-Mezzanine-rescue J1
+L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 5F45AEF7
 P 8200 9400
 F 0 "J1" H 8307 10267 50  0000 C CNN
@@ -1294,7 +1294,7 @@ Wire Wire Line
 Text GLabel 11000 6550 0    60   BiDi ~ 0
 VCCB
 $Comp
-L Ultra96-IO-Mezzanine-rescue:SW_SP3T-Switch-Ultra96-IO-Mezzanine-rescue SW1
+L Switch:SW_SP3T SW1
 U 1 1 5F8FB7EE
 P 11300 6550
 F 0 "SW1" H 11300 6833 50  0000 C CNN
@@ -1305,7 +1305,7 @@ F 3 "~" H 10675 6725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:MountingHole-Mechanical-Ultra96-IO-Mezzanine-rescue H1
+L Mechanical:MountingHole H1
 U 1 1 5F44DCE1
 P 14100 9750
 F 0 "H1" H 14200 9796 50  0000 L CNN
@@ -1316,7 +1316,7 @@ F 3 "~" H 14100 9750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:MountingHole-Mechanical-Ultra96-IO-Mezzanine-rescue H2
+L Mechanical:MountingHole H2
 U 1 1 5F480651
 P 15000 9750
 F 0 "H2" H 15100 9796 50  0000 L CNN
@@ -1331,7 +1331,7 @@ VCCB
 Wire Wire Line
 	12100 8650 12300 8650
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0101
+L power:GND #PWR0101
 U 1 1 5F56AF42
 P 11400 9250
 F 0 "#PWR0101" H 11400 9000 50  0001 C CNN
@@ -1455,7 +1455,7 @@ Connection ~ 5950 9550
 Wire Wire Line
 	5950 9550 6100 9550
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0106
+L power:GND #PWR0106
 U 1 1 5FCB3260
 P 5200 10450
 F 0 "#PWR0106" H 5200 10200 50  0001 C CNN
@@ -1475,18 +1475,18 @@ Connection ~ 5200 10350
 Wire Wire Line
 	5200 10350 5200 10250
 $Comp
-L Ultra96-IO-Mezzanine-rescue:TXS0108EPW-Logic_LevelTranslator-Ultra96-IO-Mezzanine-rescue U5
+L Logic_LevelTranslator:TXS0108EPW U5
 U 1 1 5F3D2AD0
 P 2050 1850
 F 0 "U5" H 2450 1100 50  0000 C CNN
 F 1 "TXS0108EPW" H 2450 1000 50  0000 C CNN
-F 2 "LevelShifter:QFN50P450X350X100-21N" H 2050 1100 50  0001 C CNN
+F 2 "levelshifter:QFN50P450X350X100-21N" H 2050 1100 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 2050 1750 50  0001 C CNN
 	1    2050 1850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power-Ultra96-IO-Mezzanine-rescue #PWR0107
+L power:+1V8 #PWR0107
 U 1 1 5F3D3928
 P 1950 1050
 F 0 "#PWR0107" H 1950 900 50  0001 C CNN
@@ -1510,7 +1510,7 @@ Connection ~ 1950 1100
 Wire Wire Line
 	1950 1100 1950 1050
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0108
+L power:GND #PWR0108
 U 1 1 5F45DABE
 P 2050 2700
 F 0 "#PWR0108" H 2050 2450 50  0001 C CNN
@@ -1599,7 +1599,7 @@ D-
 Wire Wire Line
 	6550 6900 6550 6950
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR?
+L power:GND #PWR?
 U 1 1 5F386E1E
 P 6550 6950
 AR Path="/5F27C63F/5F386E1E" Ref="#PWR?"  Part="1" 
@@ -1612,7 +1612,7 @@ F 3 "" H 6550 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR?
+L power:GND #PWR?
 U 1 1 5F386E18
 P 5750 6900
 AR Path="/5F27C63F/5F386E18" Ref="#PWR?"  Part="1" 
@@ -1634,7 +1634,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 6600 5750 6600
 $Comp
-L Ultra96-IO-Mezzanine-rescue:STUSB4500QTR-Interface_USB-Ultra96-IO-Mezzanine-rescue U?
+L Interface_USB:STUSB4500QTR U?
 U 1 1 5F386E03
 P 6550 6000
 AR Path="/5F27C63F/5F386E03" Ref="U?"  Part="1" 
@@ -1659,7 +1659,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 5800 5950 5800
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R-Device-Ultra96-IO-Mezzanine-rescue R?
+L Device:R_Small R?
 U 1 1 5F386E26
 P 5700 6100
 AR Path="/5F27C63F/5F386E26" Ref="R?"  Part="1" 
@@ -1671,16 +1671,12 @@ F 3 "~" H 5700 6100 50  0001 C CNN
 	1    5700 6100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5550 6100 5500 6100
-Wire Wire Line
-	5850 6100 5950 6100
 Text GLabel 5550 5500 0    60   Output ~ 0
 CC1
 Text GLabel 5550 5800 0    60   Output ~ 0
 CC2
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C5
+L Device:C_Small C5
 U 1 1 5FA47105
 P 6150 4450
 F 0 "C5" V 6050 4350 50  0000 C CNN
@@ -1691,7 +1687,7 @@ F 3 "~" H 6150 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C6
+L Device:C_Small C6
 U 1 1 5FA47962
 P 6150 4650
 F 0 "C6" V 6050 4550 50  0000 C CNN
@@ -1702,7 +1698,7 @@ F 3 "~" H 6150 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C7
+L Device:C_Small C7
 U 1 1 5FA47D21
 P 6150 4850
 F 0 "C7" V 6050 4750 50  0000 C CNN
@@ -1717,7 +1713,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 4450 5800 4650
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0102
+L power:GND #PWR0102
 U 1 1 5FAEDC19
 P 5800 5050
 F 0 "#PWR0102" H 5800 4800 50  0001 C CNN
@@ -1756,7 +1752,7 @@ Wire Wire Line
 	6850 4650 6850 4350
 Connection ~ 6850 4650
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+2V8-power-Ultra96-IO-Mezzanine-rescue #PWR0105
+L power:+2V8 #PWR0105
 U 1 1 5FC7707F
 P 6850 4350
 F 0 "#PWR0105" H 6850 4200 50  0001 C CNN
@@ -1771,7 +1767,7 @@ I2C0_SDA_RPI
 Text GLabel 5650 6300 0    60   BiDi ~ 0
 I2C0_SCL_RPI
 $Comp
-L Ultra96-IO-Mezzanine-rescue:USB_C_Receptacle_USB2.0-Connector-Ultra96-IO-Mezzanine-rescue J3
+L Connector:USB_C_Receptacle_USB2.0 J3
 U 1 1 5F4E48D2
 P 5200 9350
 F 0 "J3" H 5307 10217 50  0000 C CNN
@@ -1782,12 +1778,12 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5350 93
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:STL6P3LLH6-STL6P3LLH6-Ultra96-IO-Mezzanine-rescue Q1
+L snapeda:STL6P3LLH6 Q1
 U 1 1 5FCC6F93
 P 7750 4550
 F 0 "Q1" V 8085 4550 50  0000 C CNN
 F 1 "STL6P3LLH6" V 7994 4550 50  0000 C CNN
-F 2 "snapeda:TRANS_STL6P3LLH6" H 7750 4550 50  0001 L BNN
+F 2 "STL6P3LLH6:TRANS_STL6P3LLH6" H 7750 4550 50  0001 L BNN
 F 3 "ST Microelectronics" H 7750 4550 50  0001 L BNN
 F 4 "1.0mm" H 7750 4550 50  0001 L BNN "Field4"
 F 5 "Manufacturer Recommendations" H 7750 4550 50  0001 L BNN "Field5"
@@ -1796,7 +1792,7 @@ F 6 "3" H 7750 4550 50  0001 L BNN "Field6"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R_Small-Device-Ultra96-IO-Mezzanine-rescue R7
+L Device:R_Small R7
 U 1 1 5FCFC2E8
 P 7250 4700
 F 0 "R7" H 7309 4746 50  0000 L CNN
@@ -1807,7 +1803,7 @@ F 3 "~" H 7250 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R_Small-Device-Ultra96-IO-Mezzanine-rescue R8
+L Device:R_Small R8
 U 1 1 5FCFCF7A
 P 7250 5100
 F 0 "R8" H 7309 5146 50  0000 L CNN
@@ -1818,7 +1814,7 @@ F 3 "~" H 7250 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R_Small-Device-Ultra96-IO-Mezzanine-rescue R10
+L Device:R_Small R10
 U 1 1 5FCFD23A
 P 7950 4850
 F 0 "R10" V 7754 4850 50  0000 C CNN
@@ -1829,7 +1825,7 @@ F 3 "~" H 7950 4850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C8
+L Device:C_Small C8
 U 1 1 5FCFDD36
 P 8250 4550
 F 0 "C8" H 8342 4596 50  0000 L CNN
@@ -1840,7 +1836,7 @@ F 3 "~" H 8250 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R_Small-Device-Ultra96-IO-Mezzanine-rescue R9
+L Device:R_Small R9
 U 1 1 5FCFE305
 P 7900 6100
 F 0 "R9" V 7704 6100 50  0000 C CNN
@@ -1883,7 +1879,7 @@ Wire Wire Line
 Text GLabel 9450 8800 2    60   BiDi ~ 0
 VBUS_PWR
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+12V-power-Ultra96-IO-Mezzanine-rescue #PWR0104
+L power:+12V #PWR0104
 U 1 1 5FFE2596
 P 9150 8700
 F 0 "#PWR0104" H 9150 8550 50  0001 C CNN
@@ -1894,7 +1890,7 @@ F 3 "" H 9150 8700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+12V-power-Ultra96-IO-Mezzanine-rescue #PWR0109
+L power:+12V #PWR0109
 U 1 1 5FFE2A05
 P 6450 4350
 F 0 "#PWR0109" H 6450 4200 50  0001 C CNN
@@ -1905,7 +1901,7 @@ F 3 "" H 6450 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:D_Schottky-Device-Ultra96-IO-Mezzanine-rescue D4
+L Device:D_Schottky D4
 U 1 1 60019C31
 P 8950 4600
 F 0 "D4" V 8904 4680 50  0000 L CNN
@@ -1916,7 +1912,7 @@ F 3 "~" H 8950 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR?
+L power:GND #PWR?
 U 1 1 600508B2
 P 8950 4850
 AR Path="/5F27C63F/600508B2" Ref="#PWR?"  Part="1" 
@@ -1943,7 +1939,7 @@ Wire Wire Line
 Text GLabel 2850 8750 2    60   BiDi ~ 0
 VCCB
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+5V-power-Ultra96-IO-Mezzanine-rescue #PWR0112
+L power:+5V #PWR0112
 U 1 1 601693F4
 P 2200 8800
 F 0 "#PWR0112" H 2200 8650 50  0001 C CNN
@@ -1954,7 +1950,7 @@ F 3 "" H 2200 8800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+3V3-power-Ultra96-IO-Mezzanine-rescue #PWR0113
+L power:+3V3 #PWR0113
 U 1 1 60169ED0
 P 2000 8800
 F 0 "#PWR0113" H 2000 8650 50  0001 C CNN
@@ -1971,7 +1967,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 8800 1800 9100
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+12V-power-Ultra96-IO-Mezzanine-rescue #PWR0114
+L power:+12V #PWR0114
 U 1 1 6024789F
 P 2400 8800
 F 0 "#PWR0114" H 2400 8650 50  0001 C CNN
@@ -1990,7 +1986,7 @@ NoConn ~ 8800 9400
 NoConn ~ 8800 9500
 NoConn ~ 8800 9600
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0115
+L power:GND #PWR0115
 U 1 1 60397897
 P 2600 8800
 F 0 "#PWR0115" H 2600 8550 50  0001 C CNN
@@ -2003,7 +1999,7 @@ $EndComp
 Wire Wire Line
 	2600 8800 2600 9100
 $Comp
-L Ultra96-IO-Mezzanine-rescue:VBUS-power-Ultra96-IO-Mezzanine-rescue #PWR?
+L power:VBUS #PWR?
 U 1 1 5FC1C975
 P 6550 8650
 AR Path="/5F27C63F/5FC1C975" Ref="#PWR?"  Part="1" 
@@ -2016,7 +2012,7 @@ F 3 "" H 6550 8650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:VBUS-power-Ultra96-IO-Mezzanine-rescue #PWR?
+L power:VBUS #PWR?
 U 1 1 60407151
 P 1600 8800
 AR Path="/5F27C63F/60407151" Ref="#PWR?"  Part="1" 
@@ -2030,7 +2026,7 @@ F 3 "" H 1600 8800 50  0001 C CNN
 $EndComp
 NoConn ~ 7150 6400
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+3V3-power-Ultra96-IO-Mezzanine-rescue #PWR0117
+L power:+3V3 #PWR0117
 U 1 1 604AE2EF
 P 6650 4350
 F 0 "#PWR0117" H 6650 4200 50  0001 C CNN
@@ -2047,7 +2043,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 9000 9450 9000
 $Comp
-L Ultra96-IO-Mezzanine-rescue:D_Schottky-Device-Ultra96-IO-Mezzanine-rescue D7
+L Device:D_Schottky D7
 U 1 1 60520E35
 P 9450 9150
 F 0 "D7" V 9404 9230 50  0000 L CNN
@@ -2061,7 +2057,7 @@ Connection ~ 9450 9000
 Wire Wire Line
 	9450 9000 9550 9000
 $Comp
-L Ultra96-IO-Mezzanine-rescue:D_Schottky-Device-Ultra96-IO-Mezzanine-rescue D5
+L Device:D_Schottky D5
 U 1 1 605218FD
 P 9000 9250
 F 0 "D5" V 8954 9330 50  0000 L CNN
@@ -2079,7 +2075,7 @@ Wire Wire Line
 Wire Wire Line
 	9450 9400 9200 9400
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0118
+L power:GND #PWR0118
 U 1 1 6055B8EA
 P 9200 9450
 F 0 "#PWR0118" H 9200 9200 50  0001 C CNN
@@ -2101,7 +2097,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 9900 1900 10000
 $Comp
-L Ultra96-IO-Mezzanine-rescue:C_Small-Device-Ultra96-IO-Mezzanine-rescue C9
+L Device:C_Small C9
 U 1 1 605D0288
 P 1900 10100
 F 0 "C9" H 1992 10146 50  0000 L CNN
@@ -2117,7 +2113,7 @@ Wire Wire Line
 	1600 9900 1600 10000
 Connection ~ 1900 9900
 $Comp
-L Ultra96-IO-Mezzanine-rescue:D_Schottky-Device-Ultra96-IO-Mezzanine-rescue D6
+L Device:D_Schottky D6
 U 1 1 6060C997
 P 1600 10150
 F 0 "D6" V 1600 9850 50  0000 L CNN
@@ -2128,7 +2124,7 @@ F 3 "~" H 1600 10150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0119
+L power:GND #PWR0119
 U 1 1 6060CE6D
 P 1600 10400
 F 0 "#PWR0119" H 1600 10150 50  0001 C CNN
@@ -2141,7 +2137,7 @@ $EndComp
 Wire Wire Line
 	1600 10300 1600 10400
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0120
+L power:GND #PWR0120
 U 1 1 60648BED
 P 1900 10400
 F 0 "#PWR0120" H 1900 10150 50  0001 C CNN
@@ -2155,12 +2151,12 @@ Wire Wire Line
 	1900 10200 1900 10400
 NoConn ~ 7150 6500
 $Comp
-L Ultra96-IO-Mezzanine-rescue:TXS0108EPW-Logic_LevelTranslator-Ultra96-IO-Mezzanine-rescue U6
+L Logic_LevelTranslator:TXS0108EPW U6
 U 1 1 6087561F
 P 5150 1900
 F 0 "U6" H 5550 1150 50  0000 C CNN
 F 1 "TXS0108EPW" H 5550 1050 50  0000 C CNN
-F 2 "LevelShifter:QFN50P450X350X100-21N" H 5150 1150 50  0001 C CNN
+F 2 "levelshifter:QFN50P450X350X100-21N" H 5150 1150 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 5150 1800 50  0001 C CNN
 	1    5150 1900
 	1    0    0    -1  
@@ -2172,7 +2168,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 1050 5250 1200
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power-Ultra96-IO-Mezzanine-rescue #PWR0121
+L power:+1V8 #PWR0121
 U 1 1 60968362
 P 5050 1050
 F 0 "#PWR0121" H 5050 900 50  0001 C CNN
@@ -2192,7 +2188,7 @@ Connection ~ 5050 1150
 Wire Wire Line
 	5050 1150 5050 1200
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0122
+L power:GND #PWR0122
 U 1 1 609E325F
 P 5150 2750
 F 0 "#PWR0122" H 5150 2500 50  0001 C CNN
@@ -2217,7 +2213,7 @@ GPIO_H
 Text GLabel 4550 2100 0    60   Input ~ 0
 GPIO_F
 $Comp
-L Ultra96-IO-Mezzanine-rescue:SW_Push_Open-Switch-Ultra96-IO-Mezzanine-rescue SW2
+L Switch:SW_Push_Open SW2
 U 1 1 60B20626
 P 11200 4400
 F 0 "SW2" H 11200 4615 50  0000 C CNN
@@ -2228,7 +2224,7 @@ F 3 "~" H 11200 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:SW_Push_Open-Switch-Ultra96-IO-Mezzanine-rescue SW3
+L Switch:SW_Push_Open SW3
 U 1 1 60B20916
 P 11200 4850
 F 0 "SW3" H 11200 5065 50  0000 C CNN
@@ -2239,18 +2235,18 @@ F 3 "~" H 11200 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:TXS0108EPW-Logic_LevelTranslator-Ultra96-IO-Mezzanine-rescue U7
+L Logic_LevelTranslator:TXS0108EPW U7
 U 1 1 60B5F573
 P 11400 2000
 F 0 "U7" H 11800 1250 50  0000 C CNN
 F 1 "TXS0108EPW" H 11800 1150 50  0000 C CNN
-F 2 "LevelShifter:QFN50P450X350X100-21N" H 11400 1250 50  0001 C CNN
+F 2 "levelshifter:QFN50P450X350X100-21N" H 11400 1250 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/txs0108e.pdf" H 11400 1900 50  0001 C CNN
 	1    11400 2000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0123
+L power:GND #PWR0123
 U 1 1 60B604BC
 P 11400 2800
 F 0 "#PWR0123" H 11400 2550 50  0001 C CNN
@@ -2269,7 +2265,7 @@ Wire Wire Line
 Wire Wire Line
 	11500 1050 11500 1300
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power-Ultra96-IO-Mezzanine-rescue #PWR0124
+L power:+1V8 #PWR0124
 U 1 1 60BDA8DF
 P 11300 1050
 F 0 "#PWR0124" H 11300 900 50  0001 C CNN
@@ -2373,7 +2369,7 @@ PWR_BTN_N
 Text GLabel 11550 4850 2    60   Input ~ 0
 RST_BTN_N
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0125
+L power:GND #PWR0125
 U 1 1 61598EB7
 P 10800 4500
 F 0 "#PWR0125" H 10800 4250 50  0001 C CNN
@@ -2386,7 +2382,7 @@ $EndComp
 Wire Wire Line
 	10800 4400 10800 4500
 $Comp
-L Ultra96-IO-Mezzanine-rescue:GND-power-Ultra96-IO-Mezzanine-rescue #PWR0126
+L power:GND #PWR0126
 U 1 1 615DE338
 P 10800 4950
 F 0 "#PWR0126" H 10800 4700 50  0001 C CNN
@@ -2400,14 +2396,6 @@ Wire Wire Line
 	10800 4850 10800 4950
 NoConn ~ 5950 5300
 NoConn ~ 5950 6500
-NoConn ~ 14550 950 
-NoConn ~ 14550 1050
-NoConn ~ 14550 1150
-NoConn ~ 14550 1250
-NoConn ~ 14550 1350
-NoConn ~ 14550 1450
-NoConn ~ 14550 1650
-NoConn ~ 14550 1750
 NoConn ~ 14550 1950
 NoConn ~ 14550 2050
 NoConn ~ 14550 2250
@@ -2440,10 +2428,8 @@ NoConn ~ 15050 1650
 NoConn ~ 15050 1550
 NoConn ~ 15050 1350
 NoConn ~ 15050 1250
-NoConn ~ 15050 1050
-NoConn ~ 15050 950 
 $Comp
-L Ultra96-IO-Mezzanine-rescue:LED-Device-Ultra96-IO-Mezzanine-rescue D8
+L Device:LED D8
 U 1 1 60235050
 P 7500 6600
 F 0 "D8" H 7493 6817 50  0000 C CNN
@@ -2454,7 +2440,7 @@ F 3 "~" H 7500 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R_Small-Device-Ultra96-IO-Mezzanine-rescue R11
+L Device:R_Small R11
 U 1 1 60237D6E
 P 7900 6600
 F 0 "R11" V 7704 6600 50  0000 C CNN
@@ -2469,7 +2455,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 6600 7650 6600
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+3V3-power-Ultra96-IO-Mezzanine-rescue #PWR0127
+L power:+3V3 #PWR0127
 U 1 1 60355339
 P 8200 6500
 F 0 "#PWR0127" H 8200 6350 50  0001 C CNN
@@ -2484,7 +2470,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 6600 8000 6600
 $Comp
-L Ultra96-IO-Mezzanine-rescue:LED-Device-Ultra96-IO-Mezzanine-rescue D9
+L Device:LED D9
 U 1 1 6039CAD8
 P 7950 5400
 F 0 "D9" H 7943 5617 50  0000 C CNN
@@ -2495,7 +2481,7 @@ F 3 "~" H 7950 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:LED-Device-Ultra96-IO-Mezzanine-rescue D10
+L Device:LED D10
 U 1 1 6039D0EE
 P 7950 5750
 F 0 "D10" H 7943 5967 50  0000 C CNN
@@ -2506,7 +2492,7 @@ F 3 "~" H 7950 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R_Small-Device-Ultra96-IO-Mezzanine-rescue R12
+L Device:R_Small R12
 U 1 1 6039D573
 P 8300 5400
 F 0 "R12" V 8104 5400 50  0000 C CNN
@@ -2517,7 +2503,7 @@ F 3 "~" H 8300 5400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:R_Small-Device-Ultra96-IO-Mezzanine-rescue R13
+L Device:R_Small R13
 U 1 1 6039D92C
 P 8300 5750
 F 0 "R13" V 8104 5750 50  0000 C CNN
@@ -2528,7 +2514,7 @@ F 3 "~" H 8300 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+3V3-power-Ultra96-IO-Mezzanine-rescue #PWR0128
+L power:+3V3 #PWR0128
 U 1 1 6039DD64
 P 8600 5200
 F 0 "#PWR0128" H 8600 5050 50  0001 C CNN
@@ -2567,7 +2553,7 @@ Wire Wire Line
 	5800 8750 6200 8750
 Connection ~ 6200 8750
 $Comp
-L Ultra96-IO-Mezzanine-rescue:PWR_FLAG-power-Ultra96-IO-Mezzanine-rescue #FLG0107
+L power:PWR_FLAG #FLG0107
 U 1 1 6043ED45
 P 1600 9100
 F 0 "#FLG0107" H 1600 9175 50  0001 C CNN
@@ -2578,7 +2564,7 @@ F 3 "~" H 1600 9100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:PWR_FLAG-power-Ultra96-IO-Mezzanine-rescue #FLG0106
+L power:PWR_FLAG #FLG0106
 U 1 1 603969F9
 P 2600 9100
 F 0 "#FLG0106" H 2600 9175 50  0001 C CNN
@@ -2589,7 +2575,7 @@ F 3 "~" H 2600 9100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:PWR_FLAG-power-Ultra96-IO-Mezzanine-rescue #FLG0105
+L power:PWR_FLAG #FLG0105
 U 1 1 60247E2A
 P 2400 9100
 F 0 "#FLG0105" H 2400 9175 50  0001 C CNN
@@ -2600,7 +2586,7 @@ F 3 "~" H 2400 9100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:PWR_FLAG-power-Ultra96-IO-Mezzanine-rescue #FLG0104
+L power:PWR_FLAG #FLG0104
 U 1 1 602470AE
 P 2200 9100
 F 0 "#FLG0104" H 2200 9175 50  0001 C CNN
@@ -2611,7 +2597,7 @@ F 3 "~" H 2200 9100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:PWR_FLAG-power-Ultra96-IO-Mezzanine-rescue #FLG0103
+L power:PWR_FLAG #FLG0103
 U 1 1 60246E59
 P 2000 9100
 F 0 "#FLG0103" H 2000 9175 50  0001 C CNN
@@ -2622,7 +2608,7 @@ F 3 "~" H 2000 9100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:PWR_FLAG-power-Ultra96-IO-Mezzanine-rescue #FLG0102
+L power:PWR_FLAG #FLG0102
 U 1 1 60246A4E
 P 1800 9100
 F 0 "#FLG0102" H 1800 9175 50  0001 C CNN
@@ -2633,7 +2619,7 @@ F 3 "~" H 1800 9100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:PWR_FLAG-power-Ultra96-IO-Mezzanine-rescue #FLG0101
+L power:PWR_FLAG #FLG0101
 U 1 1 6024664E
 P 2750 9100
 F 0 "#FLG0101" H 2750 9175 50  0001 C CNN
@@ -2644,7 +2630,7 @@ F 3 "~" H 2750 9100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Ultra96-IO-Mezzanine-rescue:+1V8-power-Ultra96-IO-Mezzanine-rescue #PWR0111
+L power:+1V8 #PWR0111
 U 1 1 601688EF
 P 1800 8800
 F 0 "#PWR0111" H 1800 8650 50  0001 C CNN
@@ -2741,4 +2727,18 @@ Wire Wire Line
 	9150 8800 9450 8800
 Wire Wire Line
 	6550 8650 6550 8750
+Wire Wire Line
+	5800 6100 5950 6100
+Wire Wire Line
+	5500 6100 5600 6100
+NoConn ~ 15050 1050
+NoConn ~ 15050 950 
+NoConn ~ 14550 1750
+NoConn ~ 14550 1650
+NoConn ~ 14550 1450
+NoConn ~ 14550 1350
+NoConn ~ 14550 1250
+NoConn ~ 14550 1150
+NoConn ~ 14550 1050
+NoConn ~ 14550 950 
 $EndSCHEMATC
