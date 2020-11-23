@@ -56,7 +56,7 @@ jobs:
       - uses: nerdyscout/kicad-exports@v2.2
         with:
           # Required - kibot config file
-          config: gerbers.kibot.yaml
+          config: .config/gerbers.kibot.yaml
           # optional - prefix to output defined in config
           dir: gerbers
 

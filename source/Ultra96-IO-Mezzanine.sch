@@ -2680,7 +2680,7 @@ Text Notes 7000 4000 0    60   ~ 0
 USB PD
 Text Notes 1950 4200 0    60   ~ 0
 USB to UART Converter
-Text Notes 11200 4000 0    60   ~ 0
+Text Notes 11150 4050 0    60   ~ 0
 Buttons
 Text Notes 8300 8300 0    60   ~ 0
 USB PD Connector
