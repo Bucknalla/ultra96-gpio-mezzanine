@@ -1849,25 +1849,14 @@ $EndComp
 Wire Wire Line
 	7250 4450 7250 4600
 Wire Wire Line
-	7250 4450 7550 4450
-Wire Wire Line
 	7250 4800 7250 4850
-Wire Wire Line
-	7850 4850 7650 4850
 Connection ~ 7250 4850
 Wire Wire Line
 	7250 4850 7250 5000
 Wire Wire Line
-	7650 4650 7650 4850
-Connection ~ 7650 4850
-Wire Wire Line
-	7650 4850 7250 4850
-Wire Wire Line
 	8050 4850 8250 4850
 Wire Wire Line
 	8250 4850 8250 4650
-Wire Wire Line
-	8250 4450 7950 4450
 Wire Wire Line
 	7250 5200 7250 5700
 Wire Wire Line
@@ -2677,7 +2666,6 @@ Connection ~ 8950 4450
 Wire Wire Line
 	8800 4450 8250 4450
 Connection ~ 8800 4450
-Connection ~ 8250 4450
 Wire Wire Line
 	5850 5500 5550 5500
 Connection ~ 5850 5500
@@ -2741,4 +2729,16 @@ NoConn ~ 14550 1250
 NoConn ~ 14550 1150
 NoConn ~ 14550 1050
 NoConn ~ 14550 950 
+Wire Wire Line
+	7250 4850 7650 4850
+Wire Wire Line
+	7650 4650 7650 4850
+Connection ~ 7650 4850
+Wire Wire Line
+	7650 4850 7850 4850
+Wire Wire Line
+	7950 4450 8250 4450
+Connection ~ 8250 4450
+Wire Wire Line
+	7550 4450 7250 4450
 $EndSCHEMATC

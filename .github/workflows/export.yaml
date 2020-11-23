@@ -49,16 +49,16 @@ jobs:
         with:
           name: bom
           path: bom
-  fabricate:
+  gerbers:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: nerdyscout/kicad-exports@v2.2
         with:
           # Required - kibot config file
-          config: fabrications.kibot.yaml
+          config: gerbers.kibot.yaml
           # optional - prefix to output defined in config
-          dir: fabricate
+          dir: gerbers
           # optional - schematic file
           schema: "source/*.sch"
           # optional - PCB design file
@@ -66,8 +66,8 @@ jobs:
       - name: upload results
         uses: actions/upload-artifact@v2
         with:
-          name: fabricate
-          path: fabricate
+          name: gerbers
+          path: gerbers
   cad:
     runs-on: ubuntu-latest
     steps:
@@ -77,7 +77,7 @@ jobs:
           # Required - kibot config file
           config: model.kibot.yaml
           # optional - prefix to output defined in config
-          dir: step
+          dir: model
           # optional - schematic file
           schema: "source/*.sch"
           # optional - PCB design file
@@ -85,5 +85,5 @@ jobs:
       - name: upload results
         uses: actions/upload-artifact@v2
         with:
-          name: step
-          path: step
+          name: model
+          path: model
